@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+
+    <link href="Content/Site.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="noPrint">
+        <div class="form_container">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">שם לקוח</label>
+                    <input type="text" class="form-control" id="clientNameId" aria-describedby="emailHelp" placeholder="">
+                    <small id="emailHelp" class="form-text text-muted">הכנס שם פרטי ושם משפחה</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">תאריך הבדיקה</label>
+                    <input type="text" class="form-control" id="testDateId" placeholder="">
+                    <small id="emailHelp" class="form-text text-muted">התאריך בו לכאורה ביצעתם את הבדיקה</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">תעודת זהות</label>
+                    <input type="text" class="form-control" id="clientIdInput" placeholder="">
+                    <small id="emailHelp" class="form-text text-muted">התעודת זהות שלכם שתופיע על הבדיקה</small>
+                </div>
+            </form>
+            <button type="button" onclick="printButtonClicked();" class="noPrint">הדפסה</button>
+        </div>
+
+    </div>
+ 
+    <div class="container body-content">
+        <div class="print">
+            <img class="width100" src="Images/emptyPCR.png" />
+            <div class="client_id"></div>
+            <div class="client_name"> פירוט והשוואת תוצאות בדיקה עבור <span class="client_NameHere"></span></div>
+            <div class="print_date">תאריך הדפסה: <span class="current_dateHere"></span></div>
+            <div class="test_date"></div>
+        </div>
+        <footer class="print">
+            <img class="footer_img" src="Images/footer.png" />
+        </footer>
+    </div>
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script src="Scripts/myscript.js"></script>
+</body>
+</html>
