@@ -13,6 +13,5 @@
         $('.client_NameHere').text(client_name);
         $('.test_date').text(test_day);
         $('.current_dateHere').text(formatDate)
-
-        window.print();
+         window.print();
     }

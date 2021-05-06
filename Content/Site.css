@@ -57,6 +57,14 @@ footer {
     font-weight: bold;
     direction: rtl;
 }
+.oneFromOne{
+    left: -110px;
+    color: #707375;
+    position: relative;
+    FONT-SIZE: 19px;
+    font-weight: bold;
+    display: inline-block;
+}
 .test_date {
     top: -467px;
     left: 694px;
@@ -65,8 +73,25 @@ footer {
     FONT-SIZE: 19px;
     font-weight: bold;
 }
+.current_dateHere{
+    left: 64px;
+    top: 1px;
+    position: relative;
+}
+.wrapper{
+    width: 960px;
+    padding: 0 20px;
+    margin: 0 auto;
+    background: #143a84 url(../Images/logoBg.png) left top no-repeat;
+    -moz-box-shadow: 0 0 15px 8px #BDBDBD;
+    -webkit-box-shadow: 0 0 15px 8px #bdbdbd;
+    box-shadow: 0 0 15px 8px #bdbdbd;
+}
+
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
+   
     .jumbotron {
         margin-top: 20px;
     }
@@ -86,7 +111,23 @@ footer {
     padding:20px;
     direction:rtl;
 }
+.form-group{
+    color:#fff;
+}
+.text-muted {
+    color: #e2dede;
+}
+button{
+    background-color: #143a83;
+    border-radius: 10px;
+    color:#fff;
+    font-weight: bold;
+    font-size:20px;
+}
 @media print {
+    .wrapper{
+        display: none;
+    }
     .navbar.navbar-inverse.navbar-fixed-top{
         display:none;
     }
@@ -99,6 +140,12 @@ footer {
     .client_id {
         top: -591px;
         right: -992px;
+        font-family: 'Heebo';
+    }
+    .current_dateHere{
+        left: 64px;
+        top: 1px;
+        position: relative;
     }
     footer {
         text-align: center;
@@ -122,6 +169,15 @@ footer {
         position: relative;
         FONT-SIZE: 19px;
         font-weight: bold;
+        font-family: 'Heebo';
+    }
+    .oneFromOne{
+        left: -110px;
+        color: #707375;
+        position: relative;
+        FONT-SIZE: 19px;
+        font-weight: bold;
+        display: inline-block;
     }
     .test_date {
         top: -463px;
@@ -130,5 +186,17 @@ footer {
         position: relative;
         FONT-SIZE: 19px;
         font-weight: bold;
+        font-family: 'Heebo';
     }
+}
+
+@media screen and (max-width: 640px) {
+    .wrapper{
+        width:100%;
+        background-size: 100%;
+    }
+    .form_container {
+        padding-top: 63px;
+    }
+    
 }
